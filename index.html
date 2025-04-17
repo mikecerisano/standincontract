@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>SAG Performer Agreement – Red Fox Features</title> {/* <-- MODIFIED */}
+  <title>SAG Performer Agreement – Red Fox Features</title>
   <style>
     /* CSS Styles remain the same as provided in the original code */
     body {
@@ -16,7 +16,7 @@
       font-size: 12pt;
       position: relative;
     }
-    
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -24,17 +24,17 @@
       position: relative;
       z-index: 1;
     }
-    
+
     @media screen and (max-width: 768px) {
       body {
         padding: 10px;
       }
-      
+
       .container {
         padding: 15px;
       }
     }
-    
+
     .watermark {
       position: fixed;
       top: 50%;
@@ -46,22 +46,22 @@
       max-width: 600px;
       pointer-events: none;
     }
-    
+
     .header {
       text-align: center;
       margin-bottom: 30px;
     }
-    
+
     .logo-header {
       text-align: center;
       margin-bottom: 30px;
     }
-    
+
     .logo-top {
       max-width: 100px;
       margin: 0 auto 20px;
     }
-    
+
     .small-text {
       font-size: 9pt;
       font-style: italic;
@@ -69,7 +69,7 @@
       text-align: center;
       margin-bottom: 20px;
     }
-    
+
     h1 {
       text-align: center;
       font-size: 16pt;
@@ -77,156 +77,156 @@
       margin-bottom: 30px;
       text-transform: uppercase;
     }
-    
+
     .agreement-intro {
       margin-bottom: 20px;
     }
-    
+
     .party-section {
       margin-bottom: 30px;
     }
-    
+
     .between-text {
       font-weight: bold;
       margin-bottom: 5px;
     }
-    
+
     .party-name {
       text-align: center;
       margin-bottom: 5px;
     }
-    
+
     .party-address {
       text-align: center;
       font-size: 10pt;
       color: #666;
       margin-bottom: 15px;
     }
-    
+
     .party-designation {
       text-align: center;
       font-weight: bold;
       font-size: 10pt;
       margin-bottom: 15px;
     }
-    
+
     .and-separator {
       text-align: center;
       margin: 15px 0;
     }
-    
+
     .recitals {
       margin-bottom: 20px;
     }
-    
+
     .recitals-heading {
       font-weight: bold;
       margin-bottom: 10px;
     }
-    
+
     .whereas {
       margin-bottom: 10px;
       text-align: justify;
     }
-    
+
     .agreement-clause {
       text-align: center;
       margin: 20px 0;
       font-weight: bold;
     }
-    
+
     .section {
       margin-bottom: 20px;
     }
-    
+
     .section-number {
       font-weight: bold;
       float: left;
       margin-right: 10px;
     }
-    
+
     .section-title {
       font-weight: bold;
     }
-    
+
     .section-content {
       margin-top: 10px;
       margin-left: 20px;
     }
-    
+
     .subsection {
       margin-bottom: 10px;
     }
-    
+
     .subsection-letter {
       float: left;
       margin-right: 10px;
     }
-    
+
     .subsection-content {
       display: block;
       margin-left: 20px;
     }
-    
+
     @media screen and (max-width: 600px) {
       .section-content {
         margin-left: 10px;
       }
-      
+
       .subsection-content {
         margin-left: 15px;
       }
     }
-    
+
     .signature-section {
       margin-top: 40px;
       page-break-inside: avoid;
     }
-    
+
     .signature-party {
       margin-bottom: 30px;
     }
-    
+
     .signature-line {
       border-top: 1px solid #000;
       width: 80%;
       margin: 60px auto 5px;
     }
-    
+
     .signature-name {
       width: 80%;
       margin: 5px auto;
       font-size: 10pt;
     }
-    
+
     .date-line {
       border-top: 1px solid #000;
       width: 40%;
       margin: 40px auto 5px;
     }
-    
+
     .date-text {
       width: 40%;
       margin: 5px auto;
       font-size: 10pt;
       text-align: center;
     }
-    
+
     .editable {
       border-bottom: 1px dotted #aaa;
       min-width: 100px;
       display: inline-block;
     }
-    
+
     @media print {
       body {
         padding: 0;
       }
-      
+
       .container {
         padding: 0;
       }
-      
+
       .editable {
         border-bottom: 1px solid #000;
       }
@@ -234,32 +234,32 @@
          display: none; /* Hide print button specifically for printing */
       }
     }
-    
+
     @media screen and (max-width: 480px) {
       h1 {
         font-size: 14pt;
       }
-      
+
       .editable {
         min-width: 80px;
         max-width: 100%;
       }
-      
+
       .signature-line, .signature-name {
         width: 100%;
       }
-      
+
       .date-line, .date-text {
         width: 60%;
       }
-      
+
       #printButton {
         padding: 8px 12px;
         font-size: 12px;
         top: 10px;
         right: 10px;
       }
-      
+
       .party-address, .party-designation {
         padding: 0 10px;
       }
@@ -271,7 +271,7 @@
       clear: both;
     }
   </style>
-  
+
   <script>
     function printAsPDF() {
       // Temporarily hide the print button
@@ -279,82 +279,82 @@
       if (printButton) {
         printButton.style.display = 'none';
       }
-      
+
       // Trigger print dialog
       window.print();
-      
+
       // Show the button again after a short delay
         requestAnimationFrame(function() {
           setTimeout(function() {
              if (printButton) {
                 printButton.style.display = 'block';
              }
-          }, 500); 
+          }, 500);
         });
     }
   </script>
 </head>
 <body>
   <img src="https://raw.githubusercontent.com/mikecerisano/Investor/refs/heads/main/IMG_0069.png" alt="Red Fox Logo Watermark" class="watermark">
-  
+
   <div class="container">
     <button id="printButton" onclick="printAsPDF()" style="position: fixed; top: 20px; right: 20px; padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; z-index: 1000;">
       Export to PDF
     </button>
-    
+
     <div class="logo-header">
       <img src="https://raw.githubusercontent.com/mikecerisano/Investor/refs/heads/main/IMG_0069.png" alt="Red Fox Features Logo" class="logo-top">
     </div>
-    
-    <div class="small-text">This agreement is subject to the terms of the applicable SAG-AFTRA Collective Bargaining Agreement.</div> {/* <-- MODIFIED */}
-    
-    <h1>SAG PERFORMER AGREEMENT</h1> {/* <-- MODIFIED */}
-    
+
+    <div class="small-text">This agreement is subject to the terms of the applicable SAG-AFTRA Collective Bargaining Agreement.</div>
+
+    <h1>SAG PERFORMER AGREEMENT</h1>
+
     <div class="agreement-intro">
       THIS AGREEMENT made effective as of the <span class="editable" contenteditable="true">____</span> day of <span class="editable" contenteditable="true">____________</span>, <span class="editable" contenteditable="true">______</span>,
     </div>
-    
+
     <div class="party-section">
       <div class="between-text">BETWEEN:</div>
-      
+
       <div class="party-name">RED FOX FEATURES LLC</div>
       <div class="party-address"><span class="editable" contenteditable="true">[COMPANY ADDRESS]</span></div>
       <div class="party-designation">("PRODUCTION COMPANY")</div>
-      
+
       <div class="and-separator">- and -</div>
-      
-      <div class="party-name"><span class="editable" contenteditable="true">[NAME OF PERFORMER]</span></div> {/* <-- MODIFIED */}
-      <div class="party-address"><span class="editable" contenteditable="true">[PERFORMER ADDRESS]</span></div> {/* <-- MODIFIED */}
-      <div class="party-designation">("PERFORMER")</div> {/* <-- MODIFIED */}
+
+      <div class="party-name"><span class="editable" contenteditable="true">[NAME OF PERFORMER]</span></div>
+      <div class="party-address"><span class="editable" contenteditable="true">[PERFORMER ADDRESS]</span></div>
+      <div class="party-designation">("PERFORMER")</div>
     </div>
-    
+
     <div class="recitals">
       <div class="recitals-heading">RECITALS:</div>
-      
-      <div class="whereas">WHEREAS PRODUCTION COMPANY is producing a <span class="editable" contenteditable="true">[PROJECT TYPE, e.g., Motion Picture]</span> entitled "<span class="editable" contenteditable="true">[PROJECT TITLE]</span>" (the "Project");</div> {/* <-- MODIFIED */}
-      
-      <div class="whereas">AND WHEREAS PERFORMER wishes to render services as a performer in the role of <span class="editable" contenteditable="true">[ROLE / CHARACTER NAME / Stand-In for...]</span> for the Project;</div> {/* <-- MODIFIED */}
-      
-      <div class="whereas">AND WHEREAS PRODUCTION COMPANY wishes to engage PERFORMER to render such services pursuant to the terms and conditions of the applicable Screen Actors Guild-American Federation of Television and Radio Artists ("SAG-AFTRA") collective bargaining agreement (the "SAG-AFTRA Agreement");</div> {/* <-- MODIFIED */}
+
+      <div class="whereas">WHEREAS PRODUCTION COMPANY is producing a <span class="editable" contenteditable="true">[PROJECT TYPE, e.g., Motion Picture]</span> entitled "<span class="editable" contenteditable="true">[PROJECT TITLE]</span>" (the "Project");</div>
+
+      <div class="whereas">AND WHEREAS PERFORMER wishes to render services as a performer in the role of <span class="editable" contenteditable="true">[ROLE / CHARACTER NAME / Stand-In for...]</span> for the Project;</div>
+
+      <div class="whereas">AND WHEREAS PRODUCTION COMPANY wishes to engage PERFORMER to render such services pursuant to the terms and conditions of the applicable Screen Actors Guild-American Federation of Television and Radio Artists ("SAG-AFTRA") collective bargaining agreement (the "SAG-AFTRA Agreement");</div>
     </div>
-    
+
     <div class="agreement-clause">NOW THEREFORE THIS AGREEMENT WITNESSES that in consideration of the mutual covenants and agreements contained in this Agreement and the applicable SAG-AFTRA Agreement, the parties hereto agree as follows:</div>
-    
+
     <div class="section clearfix">
       <div class="section-number">1.</div>
       <div class="section-title">Engagement and Services</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">PRODUCTION COMPANY hereby engages PERFORMER to render services in the capacity of <span class="editable" contenteditable="true">[ROLE / CHARACTER NAME / Stand-In for...]</span> for the Project, and PERFORMER hereby accepts such engagement upon the terms and conditions herein and in the applicable SAG-AFTRA Agreement.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PRODUCTION COMPANY hereby engages PERFORMER to render services in the capacity of <span class="editable" contenteditable="true">[ROLE / CHARACTER NAME / Stand-In for...]</span> for the Project, and PERFORMER hereby accepts such engagement upon the terms and conditions herein and in the applicable SAG-AFTRA Agreement.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
           <div class="subsection-content">The services shall be performed at <span class="editable" contenteditable="true">[LOCATION ADDRESS(ES)]</span>, or such other locations as required by PRODUCTION COMPANY.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">
@@ -364,40 +364,38 @@
 
       </div>
     </div>
-    
+
     <div class="section clearfix">
       <div class="section-number">2.</div>
       <div class="section-title">Compensation</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">PRODUCTION COMPANY shall pay PERFORMER the minimum daily rate of $241.00, guaranteeing eight (8) hours of work ("Minimum Daily Rate"), subject to the terms of the applicable SAG-AFTRA Agreement.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PRODUCTION COMPANY shall pay PERFORMER the minimum daily rate of $241.00, guaranteeing eight (8) hours of work ("Minimum Daily Rate"), subject to the terms of the applicable SAG-AFTRA Agreement.</div>
         </div>
-            
-        {/* Kit Fee Removed */}
 
         <div class="subsection clearfix">
-          <div class="subsection-letter">(b)</div> {/* <-- Renumbered */}
+          <div class="subsection-letter">(b)</div>
           <div class="subsection-content">
             Payment for all services rendered hereunder shall be due in accordance with the payment schedule mandated by the applicable SAG-AFTRA Agreement, typically weekly for days worked in the preceding week.
-          </div> {/* <-- MODIFIED */}
+          </div>
         </div>
-        
+
         <div class="subsection clearfix">
-          <div class="subsection-letter">(c)</div> {/* <-- Renumbered */}
+          <div class="subsection-letter">(c)</div>
           <div class="subsection-content">All reimbursements (e.g., for pre-approved travel or expenses) must be pre-approved in writing by an authorized representative of PRODUCTION COMPANY and submitted with valid receipts.</div>
         </div>
-        
+
         <div class="subsection clearfix">
-          <div class="subsection-letter">(d)</div> {/* <-- Renumbered */}
+          <div class="subsection-letter">(d)</div>
           <div class="subsection-content">
             Payment will be made by check via payroll service <span class="editable" contenteditable="true">[PAYROLL COMPANY NAME, if known]</span>, unless otherwise required by the SAG-AFTRA Agreement.
           </div>
         </div>
 
         <div class="subsection clearfix">
-          <div class="subsection-letter">(e)</div> {/* <-- Renumbered & MODIFIED */}
+          <div class="subsection-letter">(e)</div>
           <div class="subsection-content">
             Overtime: A standard workday consists of eight (8) hours. Hours worked by the PERFORMER in excess of eight (8) hours on any single day shall be compensated as follows, calculated in one-tenth (1/10) hourly increments based on the derived hourly rate ($30.125/hour):
             <ul>
@@ -409,34 +407,26 @@
         </div>
 
         <div class="subsection clearfix">
-          <div class="subsection-letter">(f)</div> {/* <-- ADDED */}
-          <div class="subsection-content">
-            Health and Pension Contributions: PRODUCTION COMPANY shall make contributions on behalf of PERFORMER to the SAG-AFTRA Health Plan and the SAG-Producers Pension Plan (or AFTRA Retirement Fund, as applicable) based on the gross compensation paid hereunder, at the percentage rates mandated by the applicable SAG-AFTRA Agreement (currently <span class="editable" contenteditable="true">[Current P&H Rate, e.g., 20.5%]</span>%).
-          </div>
-        </div>
-
-        <div class="subsection clearfix">
-          <div class="subsection-letter">(g)</div> {/* <-- Renumbered & MODIFIED */}
-          <div class="subsection-content">
-            Total Estimated Base Compensation: Based on the Minimum Daily Rate defined in Section 2(a) and the currently Scheduled Work Days defined in Section 1(c), the total estimated *base* compensation for this engagement is $<span class="editable" contenteditable="true">[CALCULATED TOTAL BASE COMPENSATION]</span>. This amount excludes any potential overtime payments (Section 2(e)), Pension & Health contributions (Section 2(f)), meal penalties, other premiums, or pre-approved reimbursements (Section 2(c)).
+          <div class="subsection-letter">(f)</div> <div class="subsection-content">
+            Total Estimated Base Compensation: Based on the Minimum Daily Rate defined in Section 2(a) and the currently Scheduled Work Days defined in Section 1(c), the total estimated *base* compensation for this engagement is $<span class="editable" contenteditable="true">[CALCULATED TOTAL BASE COMPENSATION]</span>. This amount excludes any potential overtime payments (Section 2(e)), meal penalties, other premiums, or pre-approved reimbursements (Section 2(c)).
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="section clearfix">
       <div class="section-number">3.</div>
       <div class="section-title">Meals and Breaks</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">Meal periods and rest breaks shall be provided in accordance with the applicable SAG-AFTRA Agreement (typically, first meal break no later than six (6) hours after call time).</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">Meal periods and rest breaks shall be provided in accordance with the applicable SAG-AFTRA Agreement (typically, first meal break no later than six (6) hours after call time).</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
-          <div class="subsection-content">Failure to provide meal periods as required by the SAG-AFTRA Agreement may result in meal penalty payments due to the PERFORMER.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">Failure to provide meal periods as required by the SAG-AFTRA Agreement may result in meal penalty payments due to the PERFORMER.</div>
         </div>
 
         <div class="subsection clearfix">
@@ -445,22 +435,22 @@
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">4.</div>
       <div class="section-title">Responsibilities</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
           <div class="subsection-content">PERFORMER shall perform all assigned tasks professionally and collaboratively to the best of their ability.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
-          <div class="subsection-content">PERFORMER shall arrive on time, prepared (including wardrobe/makeup if instructed), for each day of work.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PERFORMER shall arrive on time, prepared (including wardrobe/makeup if instructed), for each day of work.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">PERFORMER shall follow instructions from the director, assistant directors, and other authorized production personnel.</div>
@@ -472,208 +462,233 @@
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">5.</div>
       <div class="section-title">Credits</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">PERFORMER shall receive credit in accordance with the applicable SAG-AFTRA Agreement. Preferred credit name: <span class="editable" contenteditable="true">[PREFERRED CREDIT NAME]</span>.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PERFORMER shall receive credit in accordance with the applicable SAG-AFTRA Agreement. Preferred credit name: <span class="editable" contenteditable="true">[PREFERRED CREDIT NAME]</span>.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
-          <div class="subsection-content">If screen credit is applicable per the SAG-AFTRA Agreement for the role of <span class="editable" contenteditable="true">[ROLE / Stand-In]</span>, it will be provided.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">If screen credit is applicable per the SAG-AFTRA Agreement for the role of <span class="editable" contenteditable="true">[ROLE / Stand-In]</span>, it will be provided.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">PRODUCTION COMPANY reserves the right to determine credit placement, size, and format, subject to the minimum requirements of the applicable SAG-AFTRA Agreement.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">6.</div>
       <div class="section-title">Ownership and Work-for-Hire</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
           <div class="subsection-content">All results and proceeds of PERFORMER's services hereunder, including the recordings of PERFORMER's performance, are created as work-made-for-hire for PRODUCTION COMPANY, which shall be the sole owner thereof for all purposes worldwide in perpetuity.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
           <div class="subsection-content">To the extent any such results and proceeds are not deemed work-made-for-hire, PERFORMER hereby assigns all rights, title, and interest therein to PRODUCTION COMPANY.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
-          <div class="subsection-content">PRODUCTION COMPANY's rights are subject to the terms and conditions (including reuse payments, if applicable) of the applicable SAG-AFTRA Agreement. PERFORMER grants PRODUCTION COMPANY the right to use their name, likeness, and biography in connection with the production, distribution, exhibition, advertising, and exploitation of the Project.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PRODUCTION COMPANY's rights are subject to the terms and conditions (including reuse payments, if applicable) of the applicable SAG-AFTRA Agreement. PERFORMER grants PRODUCTION COMPANY the right to use their name, likeness, and biography in connection with the production, distribution, exhibition, advertising, and exploitation of the Project.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">7.</div>
       <div class="section-title">Confidentiality</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
           <div class="subsection-content">No project materials, content, plot details, scripts, schedules, call sheets, or other production information may be disclosed or shared publicly (including on social media) without express written permission from PRODUCTION COMPANY.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
           <div class="subsection-content">This includes, but is not limited to, script content, plot details, casting information, behind-the-scenes footage/photos, and production techniques.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">Confidentiality obligations remain in effect indefinitely, even after completion of the project, except as required by law or the SAG-AFTRA Agreement.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">8.</div>
       <div class="section-title">Conduct and Safety</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
           <div class="subsection-content">Professional behavior is expected at all times on set and in connection with the Project.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
           <div class="subsection-content">Harassment, discrimination, or unsafe behavior is strictly prohibited and will not be tolerated, consistent with applicable law and SAG-AFTRA regulations.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">No alcohol or illegal substances are permitted on set during working hours.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(d)</div>
           <div class="subsection-content">Safety concerns should be immediately reported to an Assistant Director, Production Manager, Producer, Set Safety Officer, or SAG-AFTRA representative.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(e)</div>
           <div class="subsection-content">PERFORMER must follow all safety protocols and instructions provided by production personnel.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">9.</div>
       <div class="section-title">Cancellation and Termination</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
           <div class="subsection-content">
             Should PERFORMER become unable or unwilling to fulfill their duties under this agreement after acceptance, they must notify PRODUCTION COMPANY immediately. PERFORMER's rights and compensation in such event shall be governed by the applicable SAG-AFTRA Agreement.
-          </div> {/* <-- MODIFIED */}
+          </div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
-          <div class="subsection-content">PRODUCTION COMPANY's right to cancel or postpone production, and PERFORMER's compensation in such event, shall be governed by the applicable SAG-AFTRA Agreement.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PRODUCTION COMPANY's right to cancel or postpone production, and PERFORMER's compensation in such event, shall be governed by the applicable SAG-AFTRA Agreement.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">PRODUCTION COMPANY reserves the right to terminate this agreement for cause (including unprofessional conduct, safety violations, or failure to perform duties), subject to the provisions of the applicable SAG-AFTRA Agreement.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">10.</div>
       <div class="section-title">Insurance and Liability</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">PRODUCTION COMPANY shall maintain Worker's Compensation insurance covering PERFORMER as required by law and the SAG-AFTRA Agreement.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PRODUCTION COMPANY shall maintain Worker's Compensation insurance covering PERFORMER as required by law and the SAG-AFTRA Agreement.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
           <div class="subsection-content">PRODUCTION COMPANY is generally not liable for damage to or loss of PERFORMER's personal property unless caused by the gross negligence of PRODUCTION COMPANY. Liability limits may be governed by the SAG-AFTRA Agreement.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">PERFORMER acknowledges the inherent risks of performing on a production set and agrees to follow all safety guidelines.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">11.</div>
       <div class="section-title">Use of Performance</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">PRODUCTION COMPANY shall have the right to use PERFORMER's performance in the Project in any and all media throughout the world in perpetuity, subject to the terms (including reuse/residual payments) of the applicable SAG-AFTRA Agreement.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">PRODUCTION COMPANY shall have the right to use PERFORMER's performance in the Project in any and all media throughout the world in perpetuity, subject to the terms (including reuse/residual payments) of the applicable SAG-AFTRA Agreement.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
           <div class="subsection-content">PERFORMER may request permission to use short excerpts of their performance for their personal demo reel after the Project's initial exhibition/release, subject to PRODUCTION COMPANY's reasonable approval and any third-party clearance requirements.</div>
         </div>
-        
+
         <div class="subsection clearfix">
           <div class="subsection-letter">(c)</div>
           <div class="subsection-content">Such use must be non-commercial and properly attributed.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">12.</div>
       <div class="section-title">Governing Law</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">This agreement is subject to and shall be governed by the applicable SAG-AFTRA Agreement (<span class="editable" contenteditable="true">[SPECIFIC AGREEMENT e.g., Basic Agreement, Low Budget, etc.]</span>) and the laws of the State of <span class="editable" contenteditable="true">[STATE, e.g., New York]</span>, without regard to conflict of law principles.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">This agreement is subject to and shall be governed by the applicable SAG-AFTRA Agreement (<span class="editable" contenteditable="true">[SPECIFIC AGREEMENT e.g., Basic Agreement, Low Budget, etc.]</span>) and the laws of the State of <span class="editable" contenteditable="true">[STATE, e.g., New York]</span>, without regard to conflict of law principles.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="section clearfix">
       <div class="section-number">13.</div>
       <div class="section-title">Entire Agreement</div>
-      
+
       <div class="section-content">
         <div class="subsection clearfix">
           <div class="subsection-letter">(a)</div>
-          <div class="subsection-content">This document, together with the applicable SAG-AFTRA Agreement incorporated herein by reference, constitutes the complete understanding between both parties regarding this engagement. Any changes must be made in writing and signed by both parties, subject to SAG-AFTRA regulations.</div> {/* <-- MODIFIED */}
+          <div class="subsection-content">This document, together with the applicable SAG-AFTRA Agreement incorporated herein by reference, constitutes the complete understanding between both parties regarding this engagement. Any changes must be made in writing and signed by both parties, subject to SAG-AFTRA regulations.</div>
         </div>
          <div class="subsection clearfix">
           <div class="subsection-letter">(b)</div>
-          <div class="subsection-content">In the event of any conflict between the terms of this Agreement and the terms of the applicable SAG-AFTRA Agreement, the SAG-AFTRA Agreement shall govern.</div> {/* <-- ADDED */}
+          <div class="subsection-content">In the event of any conflict between the terms of this Agreement and the terms of the applicable SAG-AFTRA Agreement, the SAG-AFTRA Agreement shall govern.</div>
         </div>
       </div>
     </div>
-      
+
     <div class="signature-section">
       <div class="agreement-clause">IN WITNESS WHEREOF the parties have executed this Agreement as of the date first above written.</div>
-      
+
       <div class="signature-party">
         <div class="party-name">RED FOX FEATURES LLC</div>
-        
+
         <div class="signature-line"></div>
         <div class="signature-name">Per: <span class="editable" contenteditable="true">____________________________</span></div>
         <div class="signature-name">Name: <span class="editable" contenteditable="true">[PRODUCER/AUTHORIZED SIGNATORY NAME]</span></div>
-        <div class="signature-name">Title: <span class="editable" contenteditable
+        <div class="signature-name">Title: <span class="editable" contenteditable="true">[TITLE]</span></div>
+
+        <div class="date-line"></div>
+        <div class="date-text">Date</div>
+      </div>
+
+      <div class="signature-party">
+        <div class="party-name"><span class="editable" contenteditable="true">[PERFORMER NAME]</span></div>
+
+        <div class="signature-line"></div>
+        <div class="signature-name">Signature</div>
+         <div class="signature-name">SSN/Tax ID: <span class="editable" contenteditable="true">____________________________</span></div>
+         <div class="signature-name">SAG-AFTRA Member ID: <span class="editable" contenteditable="true">____________________________</span></div>
+
+        <div class="date-line"></div>
+        <div class="date-text">Date</div>
+
+        <div class="signature-name" style="margin-top: 20px;">Phone: <span class="editable" contenteditable="true">____________________________</span></div>
+        <div class="signature-name">Email: <span class="editable" contenteditable="true">____________________________</span></div>
+        <div class="signature-name">Agent (if any): <span class="editable" contenteditable="true">____________________________</span></div>
+        <div class="signature-name">Agent Contact: <span class="editable" contenteditable="true">____________________________</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
